@@ -1,5 +1,5 @@
 {
-    "name": "mihaylo47/telegram-bundle",
+    "name": "justcommunication/telegram-bundle",
     "description": "Telegram bundle",
     "type": "symfony-bundle",
     "keywords": ["telegram","messages","notification"],
@@ -11,8 +11,20 @@
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/orm": "^2.15",
         "symfony/framework-bundle": "^6.2",
-        "symfony/yaml": "^6.2"
+        "symfony/yaml": "^6.2",
+        "mihaylo47/cache-bundle": "^0.1",
+        "mihaylo47/func-bundle": "^0.1"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:mihaylo47/cache-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:mihaylo47/func-bundle.git"
+        }
+    ],
     "config": {
         "sort-packages": true
     },
