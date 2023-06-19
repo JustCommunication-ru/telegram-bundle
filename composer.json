@@ -1,5 +1,5 @@
 {
-    "name": "mihaylo47/telegram-bundle",
+    "name": "justcommunication/telegram-bundle",
     "description": "Telegram bundle",
     "type": "symfony-bundle",
     "keywords": ["telegram","messages","notification"],
