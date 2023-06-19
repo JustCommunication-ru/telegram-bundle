@@ -1,7 +1,6 @@
 {
-    "name": "justcommunication/telegram-bundle",
+    "name": "mihaylo47/telegram-bundle",
     "description": "Telegram bundle",
-    "version": "0.1.0",
     "type": "symfony-bundle",
     "keywords": ["telegram","messages","notification"],
     "license": "proprietary",
