@@ -12,8 +12,8 @@
         "doctrine/orm": "^2.15",
         "symfony/framework-bundle": "^6.2",
         "symfony/yaml": "^6.2",
-        "mihaylo47/cache-bundle": "^0.1",
-        "mihaylo47/func-bundle": "^0.1"
+        "justcommunication/cache-bundle": "^0.1",
+        "justcommunication/func-bundle": "^0.1"
     },
     "repositories": [
         {
