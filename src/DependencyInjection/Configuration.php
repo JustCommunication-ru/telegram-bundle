@@ -108,6 +108,11 @@ class Configuration implements ConfigurationInterface
                             ->defaultValue('%env(APP_URL)%')
                         ->end()
 
+                        ->scalarNode('app_name')
+                            ->info('project name, by default it is "%env(APP_NAME)%"')
+                            ->defaultValue('%env(APP_NAME)%')
+                        ->end()
+
                         ->scalarNode('production_webhook_app_url')
                             ->info('real URL of your project in www. Used in bin/console app:telegram --init')
                             ->defaultValue('')
