@@ -12,52 +12,6 @@ class Configuration implements ConfigurationInterface
     {
         // TODO: Implement getConfigTreeBuilder() method.
         $treeBuilder = new TreeBuilder('telegram');
-/*
-        $treeBuilder->getRootNode()
-
-            
-
-            ->children()
-                ->booleanNode('auto_connect')
-                ->defaultTrue()
-                ->end()
-                ->scalarNode('default_connection')
-                ->defaultValue('default')
-                ->end()
-
-                ->arrayNode('config')
-                    //->useAttributeAsKey('name')
-                    //->arrayPrototype()
-                    ->children()
-                        ->scalarNode('table')
-                        ->end()
-
-
-                        //->scalarNode('admin_chat_id')
-                            ->variableNode('admin_chat_id')
-                        //->isRequired()
-                        ->info('Telegram chat id of special super admin user')
-                        ->end()
-
-            ->scalarNode('message_prefix')
-            ->info('Telegram chat id of special admin user')
-            ->end()
-
-
-                    ->end()
-                ->end()
-
-            ->end()
-*/
-/*
-            ->arrayPrototype()
-            ->children()
-            ->scalarNode('table')->end()
-            ->scalarNode('user')->end()
-            ->scalarNode('password')->end()
-            */
-        ;
-
 
 
         $treeBuilder->getRootNode()
@@ -130,6 +84,10 @@ class Configuration implements ConfigurationInterface
 
                         ->booleanNode('length_checker')
                             ->info('Cut to much long messages')
+                            ->defaultTrue()
+                        ->end()
+                        ->booleanNode('webhook_logging_turn_on')
+                            ->info('Save webhook processing file log in /var/cache/telegram.txt')
                             ->defaultTrue()
                         ->end()
 

@@ -8,12 +8,16 @@
     "prefer-stable": true,
     "require": {
         "php": ">=8.1",
+        "justcommunication/cache-bundle": "^0.1",
+        "justcommunication/func-bundle": "^0.1",
+
+        "symfony/http-kernel": ">=5.4 ^6.2",
+        "symfony/config": ">=5.4 ^6.2",
+        "symfony/dependency-injection": ">=5.4 ^6.2",
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/orm": "^2.15",
-        "symfony/framework-bundle": "^6.2",
-        "symfony/yaml": "^6.2",
-        "justcommunication/cache-bundle": "^0.1",
-        "justcommunication/func-bundle": "^0.1"
+        "symfony/framework-bundle": ">=5.4 ^6.2",
+        "symfony/yaml": ">=5.4 ^6.2"
     },
     "repositories": [
         {
