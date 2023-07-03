@@ -630,6 +630,18 @@ dd([$origin_str, array_map(function($item) {
         return $this->telegramUserRepository->findProjectUserByPhone($phone);
     }
 
+    /**
+     * По идее если есть номер телефона в таблице телеграм-юзеров, значит есть привязка к пользователям, так ведь?
+     * А значит проще искать по номеу пользователя
+     * @param $phone
+     * @return \JustCommunication\TelegramBundle\Entity\TelegramUser|null
+     */
+    public function findByPhone($phone){
+        $phone = str_replace('+', '', $phone);
+        // может и 8 преобразовывать в 7 ??
+        return $this->telegramUserRepository->findOneBy(['phone'=>$phone]);
+    }
+
     public function findProjectUserBySuperuser(){
         return $this->telegramUserRepository->findProjectUserBySuperuser();
     }
