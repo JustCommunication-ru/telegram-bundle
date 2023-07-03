@@ -30,7 +30,11 @@ class TelegramUserRepository extends ServiceEntityRepository
 
         // Лазить из репозитория в конфиги ну такое себе, но кому сейчас легко
         $config = $params->get("justcommunication.telegram.config");
-        $this->user_entity_class = $config['user_entity_class'];
+        if (!empty($config['user_entity_class'])) {
+            $this->user_entity_class = $config['user_entity_class'];
+        }else{
+            throw new \Exception("Please configure config/packeges/telegram.yaml, set user_entity_class");
+        }
     }
 
     /**
