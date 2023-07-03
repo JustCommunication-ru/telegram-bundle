@@ -88,7 +88,7 @@ class Configuration implements ConfigurationInterface
                         ->end()
                         ->booleanNode('webhook_logging_turn_on')
                             ->info('Save webhook processing file log in /var/cache/telegram.txt')
-                            ->defaultTrue()
+                            ->defaultValue('')
                         ->end()
                         ->scalarNode('user_entity_class')
                             ->info('fully qualified classname of User Entity')
