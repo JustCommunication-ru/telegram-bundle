@@ -17,7 +17,7 @@
 APP_NAME="MyProjectName" # название проекта, используется в сообщениях
 APP_URL="https://telegram.loc" # ссылка на проект
 JC_TELEGRAM_ADMIN_CHAT_ID=789456123 # ваш личный номер в телеграмме
-JC_TELEGRAM_BOT_NAME="MY_PROJECT_BOT" # название бота в произвольной фореме (может не совпадать с официально зарегистрированным), но именно это название будет в сообщениях
+JC_TELEGRAM_BOT_NAME="MY_PROJECT_BOT" # название бота в произвольной форме (может не совпадать с официально зарегистрированным), но именно это название будет в сообщениях
 JC_TELEGRAM_TOKEN="NUMBERS:MANYSYMBOLS" # Токен выданный телеграммом
 JC_TELEGRAM_WEBHOOK_APP_URL_FOR_DEV="https://service.espvbprr.jc9.ru" # для инициализации телеграма в локале, используется только в DEV среде
 ```

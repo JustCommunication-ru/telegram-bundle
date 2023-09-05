@@ -692,7 +692,7 @@ dd([$origin_str, array_map(function($item) {
     }
 
     public function linkUser($user_chat_id, $id_user, $phone=''){
-        $this->telegramUserRepository->linkUser($user_chat_id, $id_user, $phone='');
+        $this->telegramUserRepository->linkUser($user_chat_id, $id_user, $phone);
     }
 
 
