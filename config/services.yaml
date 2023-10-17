@@ -4,8 +4,6 @@ services:
     _defaults:
         autowire: true
         autoconfigure: true
-  # не уверен но взможно это синтаксис устаревший
-  #JustCommunication\TelegramBundle\Controller\NewController: ~
   # вот так контроллер начинает работать
     JustCommunication\TelegramBundle\:
         resource: '../src/'

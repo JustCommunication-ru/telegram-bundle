@@ -27,6 +27,7 @@ use Throwable;
 class TelegramHelper
 {
     public array $config;
+    public array $debug;
     public LoggerInterface $logger;
     public TelegramEventRepository $telegramEventRepository;
     public TelegramSaveRepository $telegramSaveRepository;

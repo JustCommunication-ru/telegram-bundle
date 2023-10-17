@@ -37,7 +37,7 @@ class TelegramController extends AbstractController
      * @param Request $request
      * @return JsonResponse
      */
-    #[Route('/telegram/webhook', name: 'jc_telegram_webhook')]
+    #[Route('/telegram/webhook', name: 'jc_telegram_webhook', methods: ['GET', 'POST'], priority:100)]
     //public function telegram_webhook(TelegramHelper $telegram, Request $request, ParameterBagInterface $services_params){
     public function telegram_webhook(TelegramHelper $telegram, Request $request): JsonResponse{
         $this->telegram = $telegram;

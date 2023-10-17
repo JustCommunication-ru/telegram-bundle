@@ -341,9 +341,9 @@ class TelegramCommand extends Command
                 if (isset($res['result']['url']) && $res['result']['url'] == $this->telegram->getWebhookUrl()) {
                     $this->io->success(['Webhook for '.$this->telegram->config['bot_name'].' already set correctly:', $res['result']['url']]);
                 } else {
-                    $this->io->warning(['Webhook for '.$this->telegram->config['bot_name'].' not set correctly: ', $res['result']['url']]);
+                    $this->io->warning(['Webhook for '.$this->telegram->config['bot_name'].' was not set correctly before: ', $res['result']['url']?:'-not-set-']);
 
-                    if ($_ENV['APP_ENV']!='dev' || $this->telegram->config['production_webhook_app_url']!='') {
+                    if ($_ENV['APP_ENV']=='prod' || $this->telegram->config['production_webhook_app_url']!='') {
                         $res_set_wh = $this->telegram->setWebhook();
                         if ($res_set_wh && $res_set_wh["ok"]) {
                             $this->io->success(['Webhook for ' . $this->telegram->config['bot_name'] . ' now set successfully:', $this->telegram->getWebhookUrl()]);
