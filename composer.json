@@ -1,5 +1,5 @@
 {
-    "name": "justcommunication/telegram-bundle",
+    "name": "justcommunication-ru/telegram-bundle",
     "description": "Telegram bundle",
     "type": "symfony-bundle",
     "keywords": ["telegram","messages","notification"],
@@ -8,8 +8,8 @@
     "prefer-stable": true,
     "require": {
         "php": ">=8.1",
-        "justcommunication/cache-bundle": "^0.1",
-        "justcommunication/func-bundle": "^0.1",
+        "justcommunication-ru/cache-bundle": "^0.1",
+        "justcommunication-ru/func-bundle": "^0.1",
 
         "symfony/http-kernel": ">=5.4 ^6.2",
         "symfony/config": ">=5.4 ^6.2",
@@ -22,11 +22,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@github.com:mihaylo47/cache-bundle.git"
+            "url":  "git@github.com:JustCommunication-ru/cache-bundle.git"
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:mihaylo47/func-bundle.git"
+            "url":  "git@github.com:JustCommunication-ru/func-bundle.git"
         }
     ],
     "config": {
